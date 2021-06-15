@@ -1,14 +1,13 @@
+using Klir.TechChallenge.Web.Api.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Klir.TechChallenge.Web.Api.Data.Contracts;
+using Klir.TechChallenge.Web.Api.Services;
+using Microsoft.OpenApi.Models;
 
 namespace KlirTechChallenge.Web.Api
 {
@@ -23,9 +22,20 @@ namespace KlirTechChallenge.Web.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ShoppingDbContext>(options => options.UseInMemoryDatabase(databaseName: "Shopping"));
+            services.AddScoped<IShoppingRepository, ShoppingRepository>();
+            services.AddScoped<IShoppingService, ShoppingService>();
+
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "TechChallenge", Version = "v1" });
+
+            });
+
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: AllowSpecificOrigins,
@@ -46,6 +56,13 @@ namespace KlirTechChallenge.Web.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "TechChallenge WebApi");
+                c.RoutePrefix = string.Empty;
+            });
+
             app.UseRouting();
 
             app.UseCors(AllowSpecificOrigins);
@@ -59,3 +76,4 @@ namespace KlirTechChallenge.Web.Api
         }
     }
 }
+
