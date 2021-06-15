@@ -8,5 +8,57 @@
     <q [hidden]="isLoading">Loaded</q>
   </div>
 
-  
+  <table class="table table-striped table-bordered table-sm row-border hover" datatable>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Promotion</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of Products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price | currency: 'EUR':true }}</td>
+        <td>{{ product.promotion }}</td>
+        <td><button type="button" class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <div class="d-flex align-items-center bg-light mb-6">
+      <div class="col mb-2"> <p>Products on Cart </p></div>
+      <div class="col mb-2"><button type="button" class="btn btn-danger" (click)="clearCart()">Clear Cart</button></div>
+    </div>
+    <table class="table table-striped table-bordered table-sm row-border hover" datatable>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Promotion Applied</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of ShoppingCart.shoppingCartItems">
+          <td>{{ item.item }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.price | currency: 'EUR':true }}</td>
+          <td>{{ item.total | currency: 'EUR':true }}</td>
+          <td>{{ item.promotionApplied }}</td>
+        </tr>
+        <tr *ngIf="ShoppingCart.shoppingCartItems">
+          <td></td>
+          <td></td>
+          <td>Total</td>
+          <td>{{ ShoppingCart.total | currency: 'EUR':true }}</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+ </div>
 </div>
