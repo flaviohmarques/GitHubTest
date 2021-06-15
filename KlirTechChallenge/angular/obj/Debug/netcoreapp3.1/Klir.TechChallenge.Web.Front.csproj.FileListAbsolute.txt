@@ -1,4 +1,8 @@
-C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.csprojAssemblyReference.cache
-C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.AssemblyInfoInputs.cache
-C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.AssemblyInfo.cs
-C:\Users\e4bar\Desktop\OneDrive\KlirStuff\_RH\Tech Challenge\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.csproj.CoreCompileInputs.cache
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.AssemblyInfoInputs.cache
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.AssemblyInfo.cs
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.csproj.CoreCompileInputs.cache
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.deps.json
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.dll
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.pdb
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.dll
+C:\Users\flavi\OneDrive\Documentos\GitHub\TechTest\KlirTechChallenge\angular\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Front.pdb

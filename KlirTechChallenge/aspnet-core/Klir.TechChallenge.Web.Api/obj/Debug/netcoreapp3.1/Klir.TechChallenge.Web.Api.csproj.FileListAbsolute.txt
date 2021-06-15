@@ -102,3 +102,4 @@ C:\Users\flavi\OneDrive\Documentos\GitHub\GitHubTest\KlirTechChallenge\aspnet-co
 C:\Users\flavi\OneDrive\Documentos\GitHub\GitHubTest\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Api.dll
 C:\Users\flavi\OneDrive\Documentos\GitHub\GitHubTest\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Api.pdb
 C:\Users\flavi\OneDrive\Documentos\GitHub\GitHubTest\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Api.genruntimeconfig.cache
+C:\Users\flavi\OneDrive\Documentos\GitHub\GitHubTest\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Api.csprojAssemblyReference.cache
